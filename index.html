@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Excel</title>
     <style>
-        body{
+        body {
             background-color: #eee;
         }
 
         #title-part {
-            color: yellowgreen; 
+            color: yellowgreen;
         }
+
         .capital {
             font-weight: bolder;
             font-size: 24px;
         }
-        h1,h2{
+
+        h1,
+        h2 {
 
             text-align: center;
 
         }
-        section.container{
+
+        h1{
+            font-size: 35px;
+        }
+
+        section.container {
             background-color: white;
             border: 10px solid indigo;
             padding: 20px;
@@ -30,28 +39,67 @@
             margin-left: auto;
             margin-right: auto;
             margin: 0 auto;
-            box-shadow: 10px 10px 20px
-            rgba(0,0,0,0.7);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+        }
+        th,td{
+            border: 1px solid gray;
+        }
+        table{
+            border-collapse: collapse;
         }
     </style>
 </head>
+
 <body>
     <section class="container">
-            <h1>JS <span id="title-part">Sheet</span></h1>
-            <h2>Subtitle</h2>
-            <p><span class="capital">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quibusdam molestias ut corporis perferendis impedit laborum ea eum voluptas officiis saepe exercitationem nemo eveniet facere quaerat,
-                 nam velit rerum aperiam cupiditate!</p>
-            <p>
-                 <span class="capital">D</span>olor sit amet consectetur adipisicing elit.
-                 At, nihil mollitia itaque placeat tenetur, 
-                 aut amet exercitationem minus eius velit eligendi minima magni tempore dolore veniam modi!
-                 Id, totam consequuntur.
-            </p>
+        <h1>JS <span id="title-part">Sheet</span></h1>
+        <h2>Subtitle</h2>
+
+
+        <!--SPREADSHEET BODY-->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Cost</th>
+                    <th>Price</th>
+                    <th>Profit</th>
+                    <th>Units Projected</th>
+                    <th>Total Sales</th>
+                    <th>Profit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chocolate Raisins</td>
+                    <td>20.95</td>
+                    <td>35.95</td>
+                    <td>15</td>
+                    <td>700</td>
+                    <td>25165</td>
+                    <td>10500</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--/SPREADSHEET BODY-->
+
+
+        <p><span class="capital">L</span>orem ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam molestias ut corporis perferendis impedit laborum ea eum voluptas officiis saepe exercitationem
+            nemo eveniet facere quaerat,
+            nam velit rerum aperiam cupiditate!</p>
+        <p>
+            <span class="capital">D</span>olor sit amet consectetur adipisicing elit.
+            At, nihil mollitia itaque placeat tenetur,
+            aut amet exercitationem minus eius velit eligendi minima magni tempore dolore veniam modi!
+            Id, totam consequuntur.
+        </p>
 
     </section>
-    
+
 </body>
 
 </body>
+
 </html>
